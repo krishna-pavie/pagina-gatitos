@@ -1,0 +1,17 @@
+body{
+    background-color: #f5f5f5;
+    font-family: Arial;
+}
+
+h1{
+    color: rgb(99, 150, 207);
+}
+
+p{
+    color: #333;
+}
+
+img{
+    width: 300px;
+    border-radius: 10px;
+}
