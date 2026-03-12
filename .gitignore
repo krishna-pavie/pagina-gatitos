@@ -1,0 +1,12 @@
+# Archivos que no se deben subir
+*.exe
+*.zip
+*.rar
+
+# Carpetas de sistema
+node_modules/
+.git/
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
