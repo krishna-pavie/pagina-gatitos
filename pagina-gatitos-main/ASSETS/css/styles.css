@@ -1,0 +1,19 @@
+body{
+    background-color: lightblue;
+    font-family: Arial;
+}
+
+h1{
+    color: red;
+}
+
+p{
+    color: #333;
+}
+
+img{
+     width: 400px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
