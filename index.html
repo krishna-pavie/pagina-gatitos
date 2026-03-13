@@ -5,53 +5,98 @@
     <!-- Título de la página -->
     <title>Mundo de Gatitos</title>
 
-    <!-- Conexión con el archivo CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="ASSETS/CSS/styles.css">
 </head>
 
 <body>
 
-    <!-- Encabezado de la página -->
-    <header>
-        <h1>El mundo de los gatitos</h1>
-        <p>Un sitio informativo dedicado a los gatos.</p>
-    </header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mundo Gatitos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Información</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Galeria</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-    <!-- Contenido principal -->
-    <section>
+<!-- Encabezado -->
+<header>
+    <h1>El mundo de los gatitos</h1>
+    <p>Un sitio informativo dedicado a los gatos.</p>
+</header>
 
-        <!-- Primer artículo -->
-        <article>
-            <h1>Los gatos como mascotas</h1>
-            <p>Los gatos son animales muy populares como mascotas. Son independientes,
-            curiosos y pueden ser muy cariñosos con sus dueños.</p>
+<!-- Contenedor principal (Grid) -->
+<div class="contenedor">
 
-            <!-- Imagen desde la carpeta IMG -->
-            <img src="ASSETS/IMG/gatito1.jpg" alt="Gatito">
-        </article>
+<main>
 
-        <!-- Segundo artículo -->
-        <article>
-            <h1>Comportamiento de los gatos</h1>
-            <p>Los gatos pasan gran parte del día durmiendo y también disfrutan jugar
-            y explorar su entorno.</p>
+<!-- Sección principal -->
+<section>
 
-            <!-- Otra imagen -->
-            <img src="ASSETS/IMG/gatito2.jpg" alt="Gato jugando">
-        </article>
+<article>
+    <h2>Los gatos como mascotas</h2>
+    <p>
+    Los gatos son animales muy populares como mascotas. 
+    Son independientes, curiosos y pueden ser muy cariñosos con sus dueños.
+    </p>
+</article>
 
-    </section>
+<article>
+    <h2>Comportamiento de los gatos</h2>
+    <p>
+    Los gatos pasan gran parte del día durmiendo y también disfrutan 
+    jugar y explorar su entorno.
+    </p>
+</article>
 
-    <!-- Información extra -->
-    <aside>
-        <p>Dato curioso: los gatos pueden saltar hasta seis veces su altura.</p>
-    </aside>
+<!-- Galería (Flexbox) -->
+<div class="galeria">
+<img src="ASSETS/IMG/gatito1.jpg" alt="Gatito">
+<img src="ASSETS/IMG/gatito2.jpg" alt="Gato jugando">
+</div>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>KP - 2026 | Sitio de Gatitos</p>
-    </footer>
+</section>
+
+</main>
+
+<!-- Barra lateral -->
+<aside>
+    <p><strong>Dato curioso:</strong> los gatos pueden saltar hasta seis veces su altura.</p>
+</aside>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>KP - 2026 | Sitio de Gatitos</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
